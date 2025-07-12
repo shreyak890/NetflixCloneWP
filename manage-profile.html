@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Manage Profiles</title>
+    <link rel="stylesheet" href="manage-pro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="profile-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Logo" class="logo">
+        </a>
+    </header>
+
+    <main class="manage-profiles-container">
+        <div class="manage-profiles-content">
+            <h1>Manage Profiles</h1>
+            <div class="profiles-list">
+
+                <a href="index.html" class="profile-link-wrapper">
+                <div class="profile-item">
+                    <img src="1p.jpg" alt="Profile 1" class="profile-avatar">
+                    <span class="profile-name">User 1</span>
+                    <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+                
+                </div>
+</a>
+                <a href="index.html" class="profile-link-wrapper">
+                <div class="profile-item">
+                    <img src="2p.jpg" alt="Profile 2" class="profile-avatar">
+                    <span class="profile-name">User 2</span>
+                    <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+                </div>
+</a>
+<a href="index.html" class="profile-link-wrapper">
+                <div class="profile-item">
+                    <img src="3p.jpg" alt="Kids Profile" class="profile-avatar">
+                    <span class="profile-name">Kids</span>
+                    <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+                </div>
+</a>
+                <a href="index.html" class="add-profile-item">
+                    <div class="add-icon"><i class="fas fa-plus-circle"></i></div>
+                    <span class="add-profile-text">Add Profile</span>
+                </a>
+            </div>
+
+            <button class="btn-done">Done</button>
+        </div>
+    </main>
+
+    <div id="avatarGalleryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Choose your Avatar</h2>
+            <div id="avatarOptions" class="avatar-options-grid">
+                </div>
+            <button id="saveAvatarButton" class="btn-save-avatar">Save Profile</button>
+        </div>
+    </div>
+    <script src="manage.js"></script>
+</body>
+</html>

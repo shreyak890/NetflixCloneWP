@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Signed Out</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Specific styles for the sign-out page content */
+        .signout-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .signout-container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #e50914; /* Netflix Red */
+        }
+
+        .signout-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .signout-options a {
+            display: inline-block;
+            background-color: #e50914;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .signout-options a:hover {
+            background-color: #c40812;
+        }
+
+        .signout-options .home-link {
+            background-color: #333;
+        }
+
+        .signout-options .home-link:hover {
+            background-color: #555;
+        }
+
+        /* Ensure the logo is positioned correctly on this page */
+        .signout-header {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+
+        .signout-header .logo {
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="signout-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Logo" class="logo">
+        </a>
+    </header>
+
+    <main class="signout-container">
+        <h1>Signed Out Successfully</h1>
+        <p>You have been signed out of your Netflix account. We hope to see you back soon!</p>
+        
+        <div class="signout-options">
+            <a href="login.html">Sign In Again</a>
+            <a href="index.html" class="home-link">Return to Homepage</a>
+        </div>
+    </main>
+
+    </body>
+</html>
