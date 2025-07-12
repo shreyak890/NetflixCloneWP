@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Movies</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="news.html">New & Popular</a></li>
+                    <li><a href="mylist.html">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="search-container">
+                <input type="text" id="movieSearch" placeholder="Search...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            
+            <i class="fas fa-bell"></i>
+            <div class="profile-dropdown">
+                <img src="1p.jpg" alt="Profile" class="profile-avatar">
+                <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="manage-profiles.html">Manage Profiles</a>
+                    <a href="login.html">Account</a>
+                    <a href="signout.html">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section" style="background-image: url('gray2.jpg');">
+        <div class="hero-content">
+            <h1>The Gray Man</h1>
+            <p>
+                When the CIA's most skilled mercenary, whose true identity is unknown, accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn primary-btn"><i class="fas fa-play"></i> Play</button>
+                <button class="btn secondary-btn"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="movie-rows">
+        <div class="movie-row">
+            <h2>Popular Movies</h2>
+            <div class="thumbnails-container">
+                <div class="thumbnail">
+                    <img src="avn.jpg" alt="Movie 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="mal.jpg" alt="Movie 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="kal.jpg" alt="Movie 3">
+                </div>
+                <div class="thumbnail">
+                    <img src="school.jpg" alt="Movie 4">
+                </div>
+                <div class="thumbnail">
+                    <img src="clpud.jpg" alt="Movie 5">
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>Action & Adventure</h2>
+            <div class="thumbnails-container">
+                <div class="thumbnail">
+                    <img src="red.jpg" alt="Action 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="ac.jpg" alt="Action 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="se.jpg" alt="Action 3">
+                </div>
+                <div class="thumbnail">
+                    <img src="anna.jpg" alt="Action 4">
+                </div>
+                <div class="thumbnail">
+                    <img src="dam.jpg" alt="Action 5">
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>Sci-Fi Thrillers</h2>
+            <div class="thumbnails-container">
+                <div class="thumbnail">
+                    <img src="beyond.jpg" alt="Sci-Fi 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="in.jpg" alt="Sci-Fi 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="le.jpg" alt="Sci-Fi 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

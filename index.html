@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tvshows.html">TV Shows</a></li>
+                    <li><a href="movie.html">Movies</a></li>
+                    <li><a href="news.html">New & Popular</a></li>
+                    <li><a href="mylist.html">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="search-container">
+                <input type="text" id="movieSearch" placeholder="Search for movies or shows..." onkeyup="filterMovies()">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <span>Kids</span>
+            <i class="fas fa-bell"></i>
+            <div class="profile-dropdown">
+                <img src="1p.jpg" alt="Profile Avatar" class="profile-avatar">
+                <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="manage-profile.html">Manage Profiles</a>
+                    <a href="login.html">Account</a>
+                    <a href="help-center.html">Help Center</a>
+                    <a href="signout.html">Sign out of Netflix</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Stranger Things</h1>
+                <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+                <div class="hero-buttons">
+                    <button class="btn primary-btn"><i class="fas fa-play"></i> Play</button>
+                    <button class="btn secondary-btn"><i class="fas fa-info-circle"></i> More Info</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-row" id="trending-now">
+            <h2>Trending Now</h2>
+            <div class="thumbnails-container">
+                <div class="thumbnail">
+                    <img src="squid1.jpg" alt="Movie 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="weak.jpg" alt="Movie 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="venom.jpg" alt="Movie 3">
+                </div>
+                <div class="thumbnail">
+                    <img src="stranger.jpg" alt="Movie 4">
+                </div>
+                <div class="thumbnail">
+                    <img src="naruto.jpg" alt="Movie 5">
+                </div>
+                <div class="thumbnail">
+                    <img src="dragon.jpg" alt="Movie 6">
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-row" id="netflix-originals">
+            <h2>Netflix Originals</h2>
+            <div class="thumbnails-container">
+                <div class="thumbnail">
+                    <img src="head.jpg" alt="Original 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="alice.jpg" alt="Original 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="old.jpg" alt="Original 3">
+                </div>
+                <div class="thumbnail">
+                    <img src="money.jpg" alt="Original 4">
+                </div>
+                <div class="thumbnail">
+                    <img src="kpop.jpg" alt="Original 5">
+                </div>
+                <div class="thumbnail">
+                    <img src="dr.jpg" alt="Original 6">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Audio Description</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Media Centre</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Legal Notices</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="service-code">
+                <button>Service Code</button>
+            </div>
+            <p>&copy; 1997-2025 Netflix, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="searchb.js"></script>
+
+</body>
+</html>

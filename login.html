@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Sign In</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="login-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Logo" class="logo">
+        </a>
+    </header>
+
+    <div class="login-background">
+        <div class="login-overlay"></div>
+        <div class="login-card">
+            <h2>Sign In</h2>
+            <form id="loginForm"> 
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Email or phone number">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" required placeholder="Password">
+                </div>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+                
+                <div class="form-help">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#" class="help-link">Need help?</a>
+                </div>
+                <div class="login-options">
+                    <p>New to Netflix? <a href="#" class="sign-up-link">Sign up now.</a></p>
+                    <p class="recaptcha-text">
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                        <a href="#" class="learn-more-link">Learn more.</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="login-footer">
+        <div class="footer-content">
+            <p>Questions? Call 1-844-505-2993</p>
+            <ul class="footer-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
